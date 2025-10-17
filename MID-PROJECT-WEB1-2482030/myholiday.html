@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" href="roseflower.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburanku</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fb48b6;
+        color: #e45aaa;
+        min-height: 100vh;
+      }
+      header {
+        background: #f66dc4;
+        color: #ee73cb;
+        text-align: center;
+        padding: 0 0 22px 0;
+        box-shadow: 0 2px 25px rgba(30,40,90,0.05);
+      }
+      nav {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        background: #f66dc4;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 70px;
+        display: inline-block;
+        transition: background .15s;
+        border-radius: 8px;
+      }
+      nav a:hover, nav a.active {
+        background: #ea23a4;
+        color: #fff;
+      }
+      h1 {
+        font-size: 2.1em;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-bottom: 6px;
+      }
+      section {
+        max-width: 650px;
+        margin: 44px auto 38px auto;
+        padding: 30px 28px 28px 28px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(20,40,80,0.11);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0 20px 0;
+      }
+      .center img {
+        width: 260px;
+        max-width: 98vw;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(90,120,160,0.12);
+        margin-bottom: 6px;
+        background: #fff;
+        display: block;
+        object-fit: unset;
+      }
+      figcaption {
+        font-size: 1.12em;
+        font-weight: 500;
+        padding-top: 2px;
+        color: #215bc6;
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+        width: 100%;
+      }
+      p {
+        font-size: 1.09em;
+        line-height: 1.7;
+        margin-top: 10px;
+        margin-bottom: 16px;
+      }
+      b {
+        color: #ee37a8;
+      }
+      .gallery-title {
+        font-size: 1.19em;
+        font-weight: bold;
+        color: #ee37a8;
+        margin-top: 26px;
+        margin-bottom: 15px;
+        letter-spacing: .5px;
+      }
+      .gallery-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+        justify-content: center;
+        margin: 0 0 16px 0;
+        width: 100%;
+      }
+      .gallery-flex img {
+        width: 128px;
+        height: 88px;
+        border-radius: 10px;
+        object-fit: contain; /* gambar selalu utuh! */
+        box-shadow: 0 2px 8px rgba(80,120,160,0.10);
+        background: #eaeaea;
+        transition: transform 0.2s;
+        display: block;
+      }
+      .gallery-flex img:hover {
+        transform: scale(1.08);
+        box-shadow: 0px 4px 16px rgba(30,90,180,0.14);
+      }
+      footer {
+        background-color: #dd1d93;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+        font-size: 0.95em;
+        border-radius: 0 0 10px 10px;
+      }
+      @media (max-width:700px) {
+        section { max-width:97vw; padding: 14px 3vw;}
+        .center img { width:96vw; max-width:260px; }
+        .gallery-flex img { width: 44vw; max-width: 148px; height: 70px; }
+        nav a { padding: 0 14px; font-size: 1em; line-height: 44px;}
+        h1 { font-size: 1.2em;}
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="myholiday.html" class="active">My Holiday</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <h1>Liburanku</h1>
+    </header>
+    <section>
+        <p><b>Nama:</b> Chelsi Enatalia</p>
+        <p><b>NIM:</b> 2482030</p>
+        <div class="center">
+            <img src="FotoSaya.jpg" alt="Foto Saya">
+            <figcaption><b>Foto Saya</b></figcaption>
+        </div>
+        <p class="left">
+          Liburan kali ini sangat berkesan bagiku, aku pergi ke Singapura dan Malaysia.
+          Aku sangat senang karena memiliki kesempatan untuk berlibur sebelum memasuki perkuliahan.
+          Aku pergi dengan kakak ku, walaupun liburan kami singkat hanya 3 hari tapi 
+          aku tetap senang dan bsersyukur.
+        </p>
+        <p class="left">
+          Kami berangkat jam 3 ke Bandara Internasional Soekarno Hatta diantar oleh orang tua kami.
+          Sesampainya disana kami menunggu boarding sampai jam 10 pagi. Dan ternyata ada
+          delay selama 30 menit. Jadi, kami baru memasuki pesawat sekitar jam 11.30 WIB.
+          Dan pesawat kami pun akhirnya take off.
+        </p>
+        <p class="center">
+          Sesampainya di Changi Airport, kami memesan grab menuju ke hotel kami yang jaraknya
+          30 menit dari airport. Setelah sampai di hotel kami check-in dan langsung bergegas untuk makan siang.
+          Kami mengunjungi restoran India. Setelah makan siang kami kemudian pergi ke Marina Bay Sands, salah satu
+          spot wajib dikunjungi. Setelah melihat lihat sekitar, kami pulang ke hotel.
+        </p>
+        <p class="left">
+          Besok nya, kami check-out dari hotel dan pergi ke terminal bus untuk lanjut ke Malaysia. Kami menempuh perjalanan
+          selama 5 jam sampai akhirnya sampai di Kuala Lumpur. Kami check-in hotel dan kemudian beristirahat 
+          karena sudah malam. Besoknya kami pergi ke Pavilion Mall dan berkeliling. Sore nya kami pergi ke 
+          Alor street food, membeli sedikit jajanan dan berkeliling. Besoknya kami pergi ke twin tower dan berfoto disana. kemudian
+          di sore hari kami bergegas ke airport untuk pulang ke Indonesia. Demikianlah perjalanan saya, liburan kali ini sangat
+          berkesan dan menyenangkan.
+        </p>
+        <div class="gallery-title">Foto Liburan</div>
+        <div class="gallery-flex">
+          <img src="kualaLumpur.jpg" alt="Kuala Lumpur">
+          <img src="nasiHainan.jpg" alt="Nasi Hainan">
+          <img src="PavilionMall.jpg" alt="Pavilion Mall">
+          <img src="singapura.jpg" alt="Singapura">
+          <img src="twintower.jpg" alt="Twin Tower">
+          <img src="marinaBaySands.jpg" alt="Marina Bay Sands">
+          <img src="alorStreetFood.jpg" alt="Alor Street Food">
+        </div>
+    </section>
+    <footer>
+      &copy; 2025 Chelsi Enatalia. All rights reserved.
+    </footer>
+</body>
+</html>

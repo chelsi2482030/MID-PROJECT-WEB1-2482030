@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Registrasi</title>
+    <link rel="icon" href="roseflower.ico" type="image/x-icon">
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fb48b6;
+        color: #e45aaa;
+        min-height: 100vh;
+      }
+      header {
+        background: #e1409b;
+        color: white;
+        text-align: center;
+        padding: 0 0 22px 0;
+        box-shadow: 0 2px 25px rgba(30,40,90,0.05);
+      }
+      nav {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        background: #f66dc4;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 70px;
+        display: inline-block;
+        transition: background .15s;
+        border-radius: 8px;
+      }
+      nav a:hover, nav a.active {
+        background: #ea23a4;
+        color: #fff;
+      }
+      h1 {
+        font-size: 2.1em;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-bottom: 6px;
+      }
+      section {
+        max-width: 650px;
+        margin: 44px auto 38px auto;
+        padding: 30px 28px 28px 28px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(20,40,80,0.11);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        color: #ee37a8;
+        font-size: 1.24em;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      form {
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        background: inherit;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin-bottom: 19px;
+      }
+      label {
+        font-weight: 600;
+        color: #ee37a8;
+        display: block;
+        margin-bottom: 7px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      textarea {
+        width: 94%;
+        padding: 9px;
+        margin-top: 2px;
+        border: 1px solid #b0b8c0;
+        border-radius: 6px;
+        font-size: 1em;
+        transition: border-color .19s;
+      }
+      input:focus, textarea:focus {
+        border-color: #ee37a8;
+        outline: none;
+      }
+      textarea {
+        resize: vertical;
+      }
+      button {
+        padding: 11px 34px;
+        border-radius: 7px;
+        border: none;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #ee37a8;
+        color: #fff;
+        margin-right: 20px;
+        transition: background .19s;
+      }
+      button[type="reset"] {
+        background: #eee;
+        color: #ee37a8;
+        border: 1px solid #56062f;
+        margin-right: 0;
+      }
+      button:hover {
+        background-color: #ee37a8;
+        color: #fff;
+      }
+      button[type="reset"]:hover {
+        background-color: #c6cce6;
+        color: #ee37a8;
+      }
+        footer {
+      background-color: #dd1d93;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      font-size: 0.95em;
+      border-radius: 0 0 10px 10px;
+    
+      }
+      @media (max-width:700px) {
+        section { max-width:97vw; padding: 14px 3vw;}
+        nav a { padding: 0 14px; font-size: 1em; line-height: 44px;}
+        h1 { font-size: 1.2em;}
+        form { max-width: 98vw;}
+      }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="myholiday.html">My Holiday</a>
+            <a href="registration.html" class="active">Registration</a>
+        </nav>
+        <h1>Formulir Registrasi</h1>
+    </header>
+    <!-- Bagian Formulir -->
+    <section>
+        <h2>Silakan Isi Formulir Dibawah Ini</h2>
+        <form action="#" method="post">
+            <ul>
+                <li>
+                    <label for="fullname">Nama Lengkap:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Masukkan Nama Lengkap" required>
+                </li>
+                <li>
+                    <label for="birthdate">Tanggal Lahir:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </li>
+                <li>
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0822-xxxx-xxxx" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </li>
+                <li>
+                    <label for="address">Alamat:</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Masukkan Alamat Lengkap" required></textarea>
+                </li>
+                <li>
+                    <label for="town">Kota:</label>
+                    <input type="text" id="town" name="town" placeholder="Masukkan Kota" required>
+                </li>
+                <li>
+                    <label for="zipcode">Kode Pos:</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="Masukkan Kode Pos" required>
+                </li>
+                <li>
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Reset</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+     <footer>
+    &copy; 2025 Chelsi Enatalia. All rights reserved.
+  </footer>
+</body>
+</html>

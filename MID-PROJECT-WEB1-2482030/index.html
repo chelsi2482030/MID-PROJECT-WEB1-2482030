@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Portfolio Website</title>
+  <link rel="icon" href="roseflower.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fb48b6;
+      color: #e45aaa;
+      min-height: 100vh;
+    }
+    .navbar {
+      background: #f66dc4;
+      color: #ee73cb;
+      box-shadow: 0 2px 25px rgba(244, 89, 218, 0.08);
+    }
+    .navbar nav {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+    }
+    .navbar a {
+      color: #faf4f8;
+      text-decoration: none;
+      padding: 0 32px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 70px;
+      border-radius: 8px;
+      transition: background .15s;
+    }
+    .navbar a:hover, .navbar a.active {
+      background: #ea23a4;
+      color: #fff;
+    }
+    header {
+      background: #e1409b;
+      color: white;
+      text-align: center;
+      padding: 32px 0 18px 0;
+      box-shadow: 0 4px 24px rgba(50,70,160,0.07);
+      margin-bottom: 0;
+    }
+    .portfolio-title {
+      margin: 0;
+      font-size: 2.2em;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+    .card-home {
+      background-color: #fff;
+      max-width: 650px;
+      margin: 44px auto 38px auto;
+      padding: 36px 28px 30px 28px;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(20,40,80,0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-photo {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 0 auto 24px auto;
+      box-shadow: 0 4px 16px rgba(214, 127, 27, 0.12);
+      display: block;
+      background: #e410af;
+    }
+    h2 {
+      color: #ee37a8;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.29em;
+    }
+    p {
+      text-align: center;
+      font-size: 1.07em;
+      line-height: 1.7;
+      margin-top: 0;
+    }
+    .welcome-title {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #d43aad;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    footer {
+      background-color: #dd1d93;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      font-size: 0.95em;
+      border-radius: 0 0 10px 10px;
+    }
+    @media (max-width:700px) {
+      .navbar nav { flex-direction: column; height: auto;}
+      .navbar a { padding: 0 14px; font-size: 1em; line-height: 44px;}
+      .card-home { max-width: 96vw; padding: 15px 4vw;}
+      .profile-photo { width: 96vw; max-width: 180px; }
+      .portfolio-title { font-size: 1.18em;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="navbar">
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="myholiday.html">MyHoliday</a>
+      <a href="registration.html">Registration</a>
+    </nav>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="portfolio-title">Welcome to My Portfolio Website</div>
+  </header>
+
+  <!-- Main content in "card" -->
+  <div class="card-home">
+    <img src="ChelsiPhoto.jpg" alt="Foto saya" class="profile-photo">
+    <h2>Hallo, Saya Chelsi Enatalia</h2>
+    <p>
+      Selamat datang di website sederhana milik saya
+    </p>
+  </div>
+  
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2025 Chelsi Enatalia. All rights reserved.
+  </footer>
+</body>
+</html>
